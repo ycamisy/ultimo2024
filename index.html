@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista 20</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+        }
+
+        header {
+            background-color: yellow;
+            padding: 20px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        main {
+            display: flex;
+            flex-wrap: nowrap;
+        }
+
+        nav {
+            background-color: blue;
+            color: white;
+            min-width: 150px;
+            padding: 20px;
+            height: 50%;
+        }
+
+        nav a {
+            display: block;
+            color: white;
+            text-decoration: none;
+            padding: 10px 0;
+            transition: background-color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: darkblue;
+        }
+
+        .content {
+            background-color: gray;
+            color: black;
+            flex: 2.5;
+            min-width: 300px;
+            padding: 20px;
+        }
+
+        aside {
+            background-color: red;
+            color: white;
+            min-width: 150px;
+            padding: 20px;
+            height: 50%;
+        }
+
+        @media (max-width: 768px) {
+            main {
+                flex-direction: column;
+            }
+        }
+         @media (min-width: 770px) and (max-width: 790px) {
+            nav {
+                flex-direction: row;
+                height: 500px; 
+            }
+
+            aside {
+                background-color: red;
+                color: white;
+                flex: 1;
+                min-width: 150px;
+                padding: 20px;
+                height: 100%; 
+            }
+
+            aside p {
+              line-height: 1.5;
+            }
+        }
+        @media (min-width: 792px){
+          .content {
+            height: 300px;
+          }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        Título geral
+    </header>
+    <main>
+        <nav>
+            <a href="#">Opção 1</a>
+            <a href="#">Opção 2</a>
+            <a href="#">Opção 3</a>
+            <a href="#">Opção 4</a>
+        </nav>
+        <div class="content">
+            <h2>Subtítulo 1</h2><br>
+            <p>Informações do parágrafo. Informações do parágrafo. Informações do parágrafo.</p>
+            <br><br><br><br>
+            <h2>Subtítulo 2</h2><br>
+            <p>Informações do parágrafo. Informações do parágrafo. Informações do parágrafo.</p>
+        </div>
+        <aside>
+            <p>Outras informações serão colocadas aqui.</p><br>
+            <p>Outras informações serão colocadas aqui.</p><br>
+            <p>Outras informações serão colocadas aqui.</p><br>
+            <p>Outras informações serão colocadas aqui.</p><br>
+        </aside>
+    </main>
+</body>
+</html> 
